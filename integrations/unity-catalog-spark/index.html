@@ -1463,10 +1463,10 @@ bin/start-uc-server
 </div>
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="c1"># Show schemas (output = default)</span>
-<span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SHOW SCHEMAS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SHOW SCHEMAS&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 
 <span class="c1"># Show tables</span>
-<span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SHOW TABLES IN default&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>        
+<span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SHOW TABLES IN default&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 </div>
 </div>
@@ -1489,7 +1489,7 @@ bin/start-uc-server
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM default.marksheet LIMIT 5;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">spark</span><span class="o">.</span><span class="n">sql</span><span class="p">(</span><span class="s2">&quot;SELECT * FROM default.marksheet LIMIT 5;&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </code></pre></div>
 </div>
 </div>
